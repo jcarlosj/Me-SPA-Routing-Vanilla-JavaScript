@@ -1,7 +1,5 @@
-const notFoundInit = () => {
-    console.log( '404 Controller' );
-}
-
-export {
-    notFoundInit
+export default class NotFoundController {
+    constructor() {
+        console.log( 'Not Found Controller!' );
+    }
 }

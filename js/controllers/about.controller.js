@@ -1,7 +1,5 @@
-const aboutInit = () => {
-    console.log( 'About Controller' );
-}
-
-export {
-    aboutInit
+export default class AboutController {
+    constructor() {
+        console.log( 'About Controller!' );
+    }
 }

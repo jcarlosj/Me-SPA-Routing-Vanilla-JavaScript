@@ -1,7 +1,5 @@
-const homeInit = () => {
-    console.log( 'Home Controller' );
-}
-
-export {
-    homeInit
+export default class HomeController {
+    constructor() {
+        console.log( 'Home Controller!' );
+    }
 }

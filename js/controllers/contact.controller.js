@@ -1,7 +1,5 @@
-const contactInit = () => {
-    console.log( 'Contact Controller' );
-}
-
-export {
-    contactInit
+export default class ContactController {
+    constructor() {
+        console.log( 'Contact Controller!' );
+    }
 }

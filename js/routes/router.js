@@ -1,5 +1,4 @@
 import { routes } from './routes.js';
-// import { init } from '../controllers/home.controller.js';
 
 
 const resolveRoute = ( path ) => {
@@ -23,7 +22,6 @@ export const router = async ( event ) => {
         response = await fetch( urlTemplate ),                          // Obtiene la respuesta
         htmlPage = await response.text();                               // Obtiene el HTML de la pagina
 
-    controller.init();                                                  // Ejecuta el controlador respectivo
-
     document.querySelector( '#root' ).innerHTML = htmlPage;             // Inyecta el HTML en la SPA
+    new controller.init();                                              // Ejecuta el controlador respectivo
 }
