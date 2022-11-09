@@ -23,5 +23,5 @@ export const router = async ( event ) => {
         htmlPage = await response.text();                               // Obtiene el HTML de la pagina
 
     document.querySelector( '#root' ).innerHTML = htmlPage;             // Inyecta el HTML en la SPA
-    new controller.init();                                              // Ejecuta el controlador respectivo
+    new controller.init( title );                                       // Ejecuta el controlador respectivo
 }

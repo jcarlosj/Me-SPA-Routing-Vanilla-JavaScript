@@ -21,7 +21,7 @@ export const routes = {
         controller: { init: ContactController }
     },
     404: {
-        title: "Page not found",
+        title: "Not found",
         urlTemplate: "../pages/404.html",
         controller: { init: NotFoundController }
     }
